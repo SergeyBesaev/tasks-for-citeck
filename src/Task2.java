@@ -5,12 +5,13 @@ import java.util.Map;
 
 /**
  * Понял так, что задача о том, чтобы проверить верно ли закрываются скобки
+ * (из условия неочевидно, но слышал про такую задачу ранее)
  * Есть ощущение, что решил неоптимально. Подумаю еще и, если придумаю, пушну еще вариант решения
  */
 public class Task2 {
     public static void main(String[] args) {
-        String expression0 = "([][[]()])"; // false
-        String expression1 = "([][]()])"; // true
+        String expression0 = "([][[]()])"; // true
+        String expression1 = "([][]()])"; // false
         System.out.println("s0: " + isValid(expression0));
         System.out.println("s1: " + isValid(expression1));
     }
